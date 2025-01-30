@@ -22,7 +22,7 @@ Note: I found any additional notation through https://en.wikibooks.org/wiki/LaTe
 
 $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$  //Definition of o
 
-$f(n)\in O(g(n)) \iff \exists c>0, \exists n_0, \forall n\ge n_0: f(n) <= c g(n)$  //Defintion of O
+$f(n)\in O(g(n)) \iff \exists c>0, \exists n_0, \forall n\ge n_0: f(n) \le c g(n)$  //Defintion of O
 
 ##### Proof:
 
