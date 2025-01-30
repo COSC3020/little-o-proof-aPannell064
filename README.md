@@ -27,4 +27,4 @@ Proof:
 
 $f(n)\in o(g(n)) \implies f(n)\in O(g(n))$
 
-$\forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n) \implies \exists c>0, \exists n_0, \forall n\ge n_0: f(n) <= c g(n)$ //Defintions of o and O
+$\forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n) \implies \exists c>0, \exists n_0, \forall n\ge n_0: f(n) \le c g(n)$ //Defintions of o and O
