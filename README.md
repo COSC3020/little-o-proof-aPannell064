@@ -41,6 +41,6 @@ $c>0 \land n\ge n_0 \land f(n) < c g(n) \implies c>0 \land n\ge n_0 \land f(n) <
 
 $True \lor f(n) = c g(n)$  //Self-implication
 
-True  // $\lor$ null
+$True$  // $\lor$ null
 
 Q.E.D.
