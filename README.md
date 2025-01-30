@@ -29,12 +29,12 @@ $f(n)\in o(g(n)) \implies f(n)\in O(g(n))$
 
 $\forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n) \implies \exists c>0, \exists n_0, \forall n\ge n_0: f(n) \le c g(n)$ //Defintions of o and O
 
-$\forall c>0, \exists n_0, \forall n*\ge n_0: f(n*) < c g(n*) \implies \exists c_0>0, \exists n_1, \forall n\ge n_1: f(n) \le c_0 g(n)$ //Rename second c to $c_0$, first n to n* and second $n_0$ to $n_1$
+$\forall c>0, \exists n_0, \forall n^*\ge n_0: f(n^*) < c g(n^*) \implies \exists c_0>0, \exists n_1, \forall n\ge n_1: f(n) \le c_0 g(n)$ //Rename second c to $c_0$, first n to $n^*$ and second $n_0$ to $n_1$
 
-$\forall n_0, \forall n, \exists c, \exists n*, \exists c_0, \exists n_1: (c>0 \land n*\ge n_0 \land f(n*) < c g(n*) \implies c_0>0 \land n\ge n_1 \land f(n) \le c_0 g(n))$ //Migrate Quantifiers
+$\forall n_0, \forall n, \exists c, \exists n^*, \exists c_0, \exists n_1: (c>0 \land n^*\ge n_0 \land f(n^*) < c g(n^*) \implies c_0>0 \land n\ge n_1 \land f(n) \le c_0 g(n))$ //Migrate Quantifiers
 
-$\exists c, \exists n*, \exists c_0, \exists n_1: (c>0, n*\ge n_0, f(n*) < c g(n*) \implies c_0>0, n\ge n_1, f(n) \le c_0 g(n))$ //Remove Forall Quantifiers
+$\exists c, \exists n^*, \exists c_0, \exists n_1: (c>0, n^*\ge n_0, f(n^*) < c g(n^*) \implies c_0>0, n\ge n_1, f(n) \le c_0 g(n))$ //Remove Forall Quantifiers
 
-$(c>0, n\ge n_0, f(n) < c g(n) \implies c>0, n\ge n_0, f(n) \le c g(n))$ //Remove exists quantifiers, replacing c with c, n* with n, $c_0$ with c, and $n_1$ with $n_0$
+$(c>0, n\ge n_0, f(n) < c g(n) \implies c>0, n\ge n_0, f(n) \le c g(n))$ //Remove exists quantifiers, replacing c with c, $n^*$ with n, $c_0$ with c, and $n_1$ with $n_0$
 
 $(c>0, n\ge n_0, f(n) < c g(n) \implies c>0, n\ge n_0, f(n) \le c g(n))$ 
