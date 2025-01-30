@@ -16,7 +16,7 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.
 
 
-Note: I found most of the notation through https://en.wikibooks.org/wiki/LaTeX/Mathematics
+Note: I found any additional notation through https://en.wikibooks.org/wiki/LaTeX/Mathematics
 
 ##### Defintions: 
 
