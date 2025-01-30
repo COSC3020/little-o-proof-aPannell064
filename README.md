@@ -16,6 +16,7 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.
 
 
+Note: I found most of the notation through https://en.wikibooks.org/wiki/LaTeX/Mathematics
 
 ##### Defintions: 
 
@@ -44,3 +45,7 @@ $True \lor f(n) = c g(n)$  //Self-implication
 $True$  // $\lor$ null
 
 Q.E.D.
+
+"I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. 
+All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that 
+if plagiarism is suspected, charges may be filed against me without prior notice."
