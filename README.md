@@ -38,9 +38,12 @@ $\exists c, \exists m, \exists c_0, \exists m_0: (c>0 \land m\ge n_0 \land f(m) 
 
 $(c>0 \land n\ge n_0 \land f(n) < c g(n) \implies c>0 \land n\ge n_0 \land f(n) \le c g(n))$ //Remove exists quantifiers, replacing c with c, m with n, $c_0$ with c, and $m_0$ with $n_0$
 
-$c>0 \land n\ge n_0 \land f(n) < c g(n) \implies c>0 \land n\ge n_0 \land f(n) < c g(n) \lor f(n) = c g(n)$ //Definition of $\le$
+$c>0 \land n\ge n_0 \land f(n) < c g(n) \implies c>0 \land n\ge n_0 \land (f(n) < c g(n) \lor f(n) = c g(n))$ //Definition of $\le$
 
-$True \lor f(n) = c g(n)$  //Self-implication
+$c>0 \land n\ge n_0 \land f(n) < c g(n) \implies (c>0 \land n\ge n_0 \land f(n) < c g(n)) \lor (c>0 \land n\ge n_0 \land f(n) = c g(n))$  //Distrubute $\land$
+
+
+$True \lor (c>0 \land n\ge n_0 \land f(n) = c g(n))$  //Self-implication
 
 $True$  // $\lor$ null
 
