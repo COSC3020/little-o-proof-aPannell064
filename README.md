@@ -30,13 +30,13 @@ $f(n)\in o(g(n)) \implies f(n)\in O(g(n))$
 
 $\forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n) \implies \exists c>0, \exists n_0, \forall n\ge n_0: f(n) \le c g(n)$ //Defintions of o and O
 
-$\forall c>0, \exists n_0, \forall n*\ge n_0: f(n*) < c g(n*) \implies \exists c_0>0, \exists n_1, \forall n\ge n_1: f(n) \le c_0 g(n)$ //Rename second c to $c_0$, first n to n* and second $n_0$ to $n_1$
+$\forall c>0, \exists n_0, \forall m\ge n_0: f(m) < c g(m) \implies \exists c_0>0, \exists m_0, \forall n\ge m_0: f(n) \le c_0 g(n)$ //Rename second c to $c_0$, first n to m and second $n_0$ to $m_0$
 
-$\forall n_0, \forall n, \exists c, \exists n*, \exists c_0, \exists n_1: (c>0 \land n*\ge n_0 \land f(n*) < c g(n*) \implies c_0>0 \land n\ge n_1 \land f(n) \le c_0 g(n))$ //Migrate Quantifiers
+$\forall n_0, \forall n, \exists c, \exists m, \exists c_0, \exists m_0: (c>0 \land m\ge n_0 \land f(m) < c g(m) \implies c_0>0 \land n\ge m_0 \land f(n) \le c_0 g(n))$ //Migrate Quantifiers
 
-$\exists c, \exists n*, \exists c_0, \exists n_1: (c>0 \land n*\ge n_0 \land f(n*) < c g(n*) \implies c_0>0 \land n\ge n_1 \land f(n) \le c_0 g(n))$ //Remove Forall Quantifiers
+$\exists c, \exists m, \exists c_0, \exists m_0: (c>0 \land m\ge n_0 \land f(m) < c g(m) \implies c_0>0 \land n\ge m_0 \land f(n) \le c_0 g(n))$ //Remove Forall Quantifiers
 
-$(c>0 \land n\ge n_0 \land f(n) < c g(n) \implies c>0 \land n\ge n_0 \land f(n) \le c g(n))$ //Remove exists quantifiers, replacing c with c, n* with n, $c_0$ with c, and $n_1$ with $n_0$
+$(c>0 \land n\ge n_0 \land f(n) < c g(n) \implies c>0 \land n\ge n_0 \land f(n) \le c g(n))$ //Remove exists quantifiers, replacing c with c, m with n, $c_0$ with c, and $m_0$ with $n_0$
 
 $c>0 \land n\ge n_0 \land f(n) < c g(n) \implies c>0 \land n\ge n_0 \land f(n) < c g(n) \lor f(n) = c g(n)$ //Definition of $\le$
 
