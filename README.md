@@ -15,4 +15,40 @@ markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
 
-$f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
+
+Note: I found any additional notation through https://en.wikibooks.org/wiki/LaTeX/Mathematics
+
+##### Defintions: 
+
+$f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$  //Definition of o
+
+$f(n)\in O(g(n)) \iff \exists c>0, \exists n_0, \forall n\ge n_0: f(n) \le c g(n)$  //Defintion of O
+
+##### Proof:
+
+$f(n)\in o(g(n)) \implies f(n)\in O(g(n))$
+
+$\forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n) \implies \exists c>0, \exists n_0, \forall n\ge n_0: f(n) \le c g(n)$ //Defintions of o and O
+
+$\forall c>0, \exists n_0, \forall m\ge n_0: f(m) < c g(m) \implies \exists c_0>0, \exists m_0, \forall n\ge m_0: f(n) \le c_0 g(n)$ //Rename second c to $c_0$, first n to m and second $n_0$ to $m_0$
+
+$\forall n_0, \forall n, \exists c, \exists m, \exists c_0, \exists m_0: (c>0 \land m\ge n_0 \land f(m) < c g(m) \implies c_0>0 \land n\ge m_0 \land f(n) \le c_0 g(n))$ //Migrate Quantifiers
+
+$\exists c, \exists m, \exists c_0, \exists m_0: (c>0 \land m\ge n_0 \land f(m) < c g(m) \implies c_0>0 \land n\ge m_0 \land f(n) \le c_0 g(n))$ //Remove Forall Quantifiers
+
+$(c>0 \land n\ge n_0 \land f(n) < c g(n) \implies c>0 \land n\ge n_0 \land f(n) \le c g(n))$ //Remove exists quantifiers, replacing c with c, m with n, $c_0$ with c, and $m_0$ with $n_0$
+
+$c>0 \land n\ge n_0 \land f(n) < c g(n) \implies c>0 \land n\ge n_0 \land (f(n) < c g(n) \lor f(n) = c g(n))$ //Definition of $\le$
+
+$c>0 \land n\ge n_0 \land f(n) < c g(n) \implies (c>0 \land n\ge n_0 \land f(n) < c g(n)) \lor (c>0 \land n\ge n_0 \land f(n) = c g(n))$  //Distrubute $\land$
+
+
+$True \lor (c>0 \land n\ge n_0 \land f(n) = c g(n))$  //Self-implication
+
+$True$  // $\lor$ null
+
+Q.E.D.
+
+"I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. 
+All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that 
+if plagiarism is suspected, charges may be filed against me without prior notice."
